@@ -1,0 +1,29 @@
+@import "navbar.scss";
+
+header {
+  .header-info {
+    background-color: $primary-color;
+    .container {
+      @include container-center(65%);
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          padding-left: 50px;
+          font-size: 10px;
+          span {
+            font-size: 5px;
+            vertical-align: top;
+          }
+          i {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+  .jumbotron {
+    background: url('/img/jumbotron.jpg') no-repeat;
+    height: 400px;
+  }
+}

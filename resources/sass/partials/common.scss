@@ -1,0 +1,95 @@
+// COLOR
+  // TEXT
+  .text-white {
+    color: #FFF;
+  }
+  .text-black {
+    color: #000;
+  }
+  .text-pri-color {
+    color: $primary-color;
+  }
+
+
+
+  // TEXT
+  // BACKGROUND
+
+  .bg-white {
+    background-color: #FFF
+  }
+
+
+  // BACKGROUND
+// COLOR
+// MARGIN & PADDING
+$types: m, p;
+@each $spacing in $types {
+  @for $i from 1 through 20 {
+    .#{$spacing}-#{$i} {
+      @if $spacing == m {
+        margin: 5px * $i;
+      } @else {
+        padding: 5px * $i;
+      }
+    }
+  }
+}
+$types: m, p;
+@each $spacing in $types {
+  @for $i from 1 through 20 {
+    .#{$spacing}t-#{$i} {
+      @if $spacing == m {
+        margin-top: 5px * $i;
+      } @else {
+        padding-top: 5px * $i;
+      }
+    }
+  }
+}
+$types: m, p;
+@each $spacing in $types {
+  @for $i from 1 through 20 {
+    .#{$spacing}r-#{$i} {
+      @if $spacing == m {
+        margin-right: 5px * $i;
+      } @else {
+        padding-right: 5px * $i;
+      }
+    }
+  }
+}
+$types: m, p;
+@each $spacing in $types {
+  @for $i from 1 through 20 {
+    .#{$spacing}b-#{$i} {
+      @if $spacing == m {
+        margin-bottom: 5px * $i;
+      } @else {
+        padding-bottom: 5px * $i;
+      }
+    }
+  }
+}
+$types: m, p;
+@each $spacing in $types {
+  @for $i from 1 through 20 {
+    .#{$spacing}l-#{$i} {
+      @if $spacing == m {
+        margin-left: 5px * $i;
+      } @else {
+        padding-left: 5px * $i;
+      }
+    }
+  }
+}
+
+// MARGIN & PADDING
+// TEXT-STYLE
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+// TEXT-STYLE

@@ -1,0 +1,5 @@
+// CENTRAMENTO E LARGHEZZA ELEMENTI
+@mixin container-center($width) {
+  width: $width;
+  margin: 0 auto;
+}
