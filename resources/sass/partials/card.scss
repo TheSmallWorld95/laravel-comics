@@ -1,0 +1,28 @@
+main {
+  .main-content-container {
+    width: 100%;
+    background-color: #1C1C1C;
+    .card-container {
+      @include container-center(65%);
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .card {
+        width: calc(100% / 6 - 20px);
+        .cover {
+          height: 200px;
+          overflow: hidden;
+        }
+      }
+    }
+    .more {
+      @include flex(center,center);
+    }
+    button {
+      background-color: $primary-color;
+      border-style: none;
+      font-weight: bold;
+      padding: 10px 60px;
+    }
+  }
+}

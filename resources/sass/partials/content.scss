@@ -1,0 +1,40 @@
+@import "card.scss";
+main {
+  position: relative;
+  .title-container {
+    @include flex (center, center);
+    background-color: $primary-color;
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    left: 340px;
+    .title {
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .marketing {
+    background-color: $primary-color;
+    .utility-container {
+      @include container-center(65%);
+      @include flex (space-between, center);
+      .utility {
+        width: calc(100% / 5 - 50px);
+        img {
+          height: 60px;
+          vertical-align: middle;
+        }
+        .visa {
+          width: 50px;
+        }
+        span {
+          font-size: 12px;
+          vertical-align: middle;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

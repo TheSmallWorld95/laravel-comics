@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 ul {
   list-style: none;
 }
@@ -840,27 +844,22 @@ header .navbar {
   align-items: center;
   justify-content: space-around;
 }
-
 header .navbar img {
   width: 80px;
 }
-
 header .navbar ul {
   display: flex;
 }
-
 header .navbar ul li {
   font-size: 12px;
   font-weight: bold;
   padding-right: 40px;
   color: #464646;
 }
-
 header .navbar ul li i {
   padding-left: 5px;
   color: #0282F9;
 }
-
 header .navbar input {
   outline: 0;
   font-size: 14px;
@@ -869,25 +868,21 @@ header .navbar input {
   border: 0;
   border-bottom: 2px solid #0282F9;
 }
-
 header .navbar input::-moz-placeholder {
   color: #464646;
   font-weight: bold;
   padding-left: 80px;
 }
-
 header .navbar input:-ms-input-placeholder {
   color: #464646;
   font-weight: bold;
   padding-left: 80px;
 }
-
 header .navbar input::placeholder {
   color: #464646;
   font-weight: bold;
   padding-left: 80px;
 }
-
 header .navbar i.fa-search {
   position: absolute;
   top: 50px;
@@ -897,33 +892,101 @@ header .navbar i.fa-search {
 header .header-info {
   background-color: #0282F9;
 }
-
 header .header-info .container {
   width: 65%;
   margin: 0 auto;
 }
-
 header .header-info .container ul {
   display: flex;
   justify-content: flex-end;
 }
-
 header .header-info .container ul li {
   padding-left: 50px;
   font-size: 10px;
 }
-
 header .header-info .container ul li span {
   font-size: 5px;
   vertical-align: top;
 }
-
 header .header-info .container ul li i {
   font-size: 8px;
 }
-
 header .jumbotron {
   background: url("/img/jumbotron.jpg") no-repeat;
   height: 400px;
 }
 
+main .main-content-container {
+  width: 100%;
+  background-color: #1C1C1C;
+}
+main .main-content-container .card-container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .main-content-container .card-container .card {
+  width: calc(100% / 6 - 20px);
+}
+main .main-content-container .card-container .card .cover {
+  height: 200px;
+  overflow: hidden;
+}
+main .main-content-container .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .main-content-container button {
+  background-color: #0282F9;
+  border-style: none;
+  font-weight: bold;
+  padding: 10px 60px;
+}
+
+main {
+  position: relative;
+}
+main .title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0282F9;
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  top: -20px;
+  left: 340px;
+}
+main .title-container .title {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+main .marketing {
+  background-color: #0282F9;
+}
+main .marketing .utility-container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .marketing .utility-container .utility {
+  width: calc(100% / 5 - 50px);
+}
+main .marketing .utility-container .utility img {
+  height: 60px;
+  vertical-align: middle;
+}
+main .marketing .utility-container .utility .visa {
+  width: 50px;
+}
+main .marketing .utility-container .utility span {
+  font-size: 12px;
+  vertical-align: middle;
+  padding-left: 10px;
+}
