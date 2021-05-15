@@ -1,0 +1,46 @@
+footer {
+  background: url('/img/footer-bg.jpg') no-repeat;
+  background-size: cover;
+  .link-background {
+    background: url('/img/dc-logo-bg.png') no-repeat;
+    background-position: 80% 60%;
+    background-size: 35%;
+    .link-container {
+      @include container-center(65%);
+      display: flex;
+      .link {
+        padding-right: 30px;
+        h3 {
+          text-transform: uppercase;
+          color: #FFF;
+          padding-bottom: 20px;
+          font-size: 24px;
+        }
+        ul {
+          color: #959595;
+          font-size: 14px;
+          li {
+            padding-bottom: 10px;
+          }
+        }
+      }
+      .shop {
+        position: absolute;
+        top: 300px;
+        left: 0;
+      }
+    }
+    .copyright {
+      @include container-center(65%);
+      p {
+        color: #959595;
+        font-size: 14px;
+      }
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+  }
+}

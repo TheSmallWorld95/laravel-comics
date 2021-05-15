@@ -1,0 +1,27 @@
+footer {
+  .social {
+    background-color: #303030;
+    .social-container {
+      @include container-center(65%);
+      @include flex(space-between, center);
+      button {
+        background-color: inherit;
+        border: 2px solid $primary-color;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        color: $primary-color;
+        vertical-align: middle;
+      }
+      img {
+        width: 60px;
+        padding-right: 20px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

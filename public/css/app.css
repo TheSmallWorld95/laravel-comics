@@ -990,3 +990,81 @@ main .marketing .utility-container .utility span {
   vertical-align: middle;
   padding-left: 10px;
 }
+
+footer {
+  background: url("/img/footer-bg.jpg") no-repeat;
+  background-size: cover;
+}
+footer .link-background {
+  background: url("/img/dc-logo-bg.png") no-repeat;
+  background-position: 80% 60%;
+  background-size: 35%;
+}
+footer .link-background .link-container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+}
+footer .link-background .link-container .link {
+  padding-right: 30px;
+}
+footer .link-background .link-container .link h3 {
+  text-transform: uppercase;
+  color: #FFF;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+footer .link-background .link-container .link ul {
+  color: #959595;
+  font-size: 14px;
+}
+footer .link-background .link-container .link ul li {
+  padding-bottom: 10px;
+}
+footer .link-background .link-container .shop {
+  position: absolute;
+  top: 300px;
+  left: 0;
+}
+footer .link-background .copyright {
+  width: 65%;
+  margin: 0 auto;
+}
+footer .link-background .copyright p {
+  color: #959595;
+  font-size: 14px;
+}
+footer .link-background .copyright a {
+  color: #0282F9;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer .social {
+  background-color: #303030;
+}
+footer .social .social-container {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .social .social-container button {
+  background-color: inherit;
+  border: 2px solid #0282F9;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer .social .social-container span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0282F9;
+  vertical-align: middle;
+}
+footer .social .social-container img {
+  width: 60px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
