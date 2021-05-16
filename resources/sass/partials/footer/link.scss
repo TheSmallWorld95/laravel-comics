@@ -8,6 +8,7 @@ footer {
     .link-container {
       @include container-center(65%);
       display: flex;
+      position: relative;
       .link {
         padding-right: 30px;
         h3 {

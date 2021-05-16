@@ -8,15 +8,17 @@
   </div>
   <section class="main-content-container pt-10 pl-4 pr-4">
     <div class="card-container">
-      @foreach ($comics as $comic)
-      <div class="card">
-        <div class="cover">
-          <img src="{{$comic['thumb']}}" alt="">
+      @foreach ($comics as $index => $comic)
+      <a href="{{route('detail', ['id' => $index])}}" class="card">
+        <div >
+          <div class="cover">
+            <img src="{{$comic['thumb']}}" alt="">
+          </div>
+          <div class="comic-title">
+            <h5 class="text-uppercase text-white pt-3 pb-10">{{$comic['title']}}</h5>
+          </div>
         </div>
-        <div class="comic-title">
-          <h5 class="text-uppercase text-white pt-3 pb-10">{{$comic['title']}}</h5>
-        </div>
-      </div>
+      </a>
       @endforeach
     </div>
     <div class="more pb-5">

@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="navbar pb-4 pt-4">
-    <img class="mr-20" src="img/dc-logo.png" alt="">
+    <img class="mr-20" src="/img/dc-logo.png" alt="">
     <ul class="text-uppercase">
       <li>characters</li>
       <li>comics</li>
@@ -24,6 +24,6 @@
     <input type="text" name="" value="" placeholder="Search"><i class="fas fa-search"></i>
   </div>
   <div class="jumbotron">
-    
+
   </div>
 </header>

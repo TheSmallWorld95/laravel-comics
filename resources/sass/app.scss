@@ -1,9 +1,9 @@
 //
-@import "partials/variables.scss";
-@import "partials/mixins.scss";
-@import "partials/normalize.scss";
-@import "partials/common.scss";
-@import "partials/header.scss";
-@import "partials/content.scss";
+@import "partials/utility/variables.scss";
+@import "partials/utility/mixins.scss";
+@import "partials/utility/normalize.scss";
+@import "partials/utility/common.scss";
+@import "partials/header/header.scss";
+@import "partials/main/content.scss";
 @import "partials/footer/link.scss";
 @import "partials/footer/social.scss";

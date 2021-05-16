@@ -1,0 +1,121 @@
+@import "card.scss";
+main {
+  position: relative;
+  .title-container {
+    @include flex (center, center);
+    background-color: $primary-color;
+    width: 250px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    left: 340px;
+    .title {
+      font-size: 22px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .marketing {
+    background-color: $primary-color;
+    .utility-container {
+      @include container-center(65%);
+      @include flex (space-between, center);
+      .utility {
+        width: calc(100% / 5 - 50px);
+        img {
+          height: 60px;
+          vertical-align: middle;
+        }
+        .visa {
+          width: 50px;
+        }
+        span {
+          font-size: 12px;
+          vertical-align: middle;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .divider {
+    background-color: $primary-color;
+    height: 80px;
+  }
+  .comic-details {
+    position: relative;
+    .comic-thumb {
+      width: 192px;
+      height: 291px;
+      border: 1px solid #FFF;
+      position: absolute;
+      top: -320px;
+      left: 450px;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      h6 {
+        font-weight: normal;
+        padding: 3px;
+        background-color: #00a6cc;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      span {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 11px;
+        padding: 3px;
+        background-color: #00a6cc;
+      }
+    }
+  }
+  .info {
+    @include container-center(53%);
+    display: flex;
+    .info-container {
+      h2 {
+        font-size: 28px;
+        color: #003f5e;
+      }
+      .price-container {
+        @include flex(space-between,center);
+        background-color: #55ba59;
+        border-bottom: 1px solid #357739;
+        .price {
+          padding: 15px 25px;
+        }
+        .availability-container {
+          padding: 15px 25px;
+          display: flex;
+          .availability {
+            height: 100%;
+          }
+        }
+        span {
+          opacity: 0.7;
+        }
+        a {
+          color: #FFF;
+          padding-left: 30px;
+          height: 100%;
+        }
+      }
+      .description {
+        line-height: 2;
+        color: #555555;
+        font-size: 14px;
+      }
+    }
+    .advertisement {
+      h4 {
+        color: #555555;
+        text-align: right;
+      }
+    }
+  }
+}
